@@ -16,11 +16,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database_connectivity.controller.FirstController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database_connectivity.controller.FirstController">
     <children>
-        <VBox prefHeight="400.0" prefWidth="600.0">
+        <VBox prefHeight="400.0" prefWidth="670.0">
             <children>
-                <MenuBar>
+                <MenuBar prefHeight="26.0" prefWidth="678.0">
                     <menus>
                         <Menu mnemonicParsing="false" text="Menu">
                             <items>
@@ -43,7 +43,7 @@
                         </Menu>
                     </menus>
                 </MenuBar>
-                <HBox prefHeight="400.0" prefWidth="600.0">
+                <HBox prefHeight="400.0" prefWidth="661.0">
                     <children>
                         <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="262.0" HBox.hgrow="ALWAYS">
                             <children>
@@ -115,12 +115,12 @@
                                                 <Insets right="10.0" />
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="btnUpdate" mnemonicParsing="false" text="Update">
+                                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#onUpdate" text="Update">
                                             <HBox.margin>
                                                 <Insets right="10.0" />
                                             </HBox.margin>
                                         </Button>
-                                        <Button fx:id="btnDelete" mnemonicParsing="false" text="Delete">
+                                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onDelete" text="Delete">
                                             <HBox.margin>
                                                 <Insets right="10.0" />
                                             </HBox.margin>
@@ -129,12 +129,12 @@
                                 </HBox>
                             </children>
                         </VBox>
-                        <TableView fx:id="tbView" prefHeight="374.0" prefWidth="386.0">
+                        <TableView fx:id="tbView" onMouseClicked="#onTbClicked" prefHeight="375.0" prefWidth="470.0">
                             <columns>
-                                <TableColumn fx:id="colID" prefWidth="59.9999862909317" text="ID" />
-                                <TableColumn fx:id="colName" prefWidth="103.99999237060547" text="Name" />
-                                <TableColumn fx:id="colPrice" prefWidth="77.60003662109375" text="Price" />
-                                <TableColumn fx:id="colCategory" prefWidth="120.800048828125" text="Category" />
+                                <TableColumn fx:id="colID" prefWidth="50.39996415376663" text="ID" />
+                                <TableColumn fx:id="colName" prefWidth="126.40008163452148" text="Name" />
+                                <TableColumn fx:id="colPrice" prefWidth="137.6000518798828" text="Price" />
+                                <TableColumn fx:id="colCategory" prefWidth="123.199951171875" text="Category" />
                             </columns>
                         </TableView>
                     </children>

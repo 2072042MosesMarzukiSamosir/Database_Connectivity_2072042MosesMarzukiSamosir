@@ -5,5 +5,6 @@ import javafx.collections.ObservableList;
 public interface DaoInterface <T>{
     ObservableList<T> getData();
     void addData(T data);
-    void delData(T data);
+    boolean delData(T data);
+    int updateData(T data);
 }
